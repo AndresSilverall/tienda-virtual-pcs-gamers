@@ -1,3 +1,19 @@
+.titulo {
+    color: blue;
+}
+
 body {
-    background-color: aqua;
+    background: #ECE9E6;  
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+
+}
+
+.carousel-inner {
+    padding-top: 25px;
+}
+
+
+.d-block {
+    width: 1000px;
 }

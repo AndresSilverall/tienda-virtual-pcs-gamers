@@ -1,23 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
 
-<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
-
-{% block stylesheet %}
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    {{ block.super }}
-{% endblock %}
-
 
 {% block content %}
-<div class="title text-center">
-    <h3> Galeria de productos</h3>
-</div>
 
-<div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" class="d-block w-100" alt="..." width="500" height="500">
+    {% block stylesheet %}
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    {% endblock %}
+
+
+<div class="container container-center">
+  <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" class="d-block w-100" alt="..." width="500" height="500">
       </div>
       <div class="carousel-item">
         <img src="https://picaro.news/wp-content/uploads/2021/09/PC-GAMER.jpg" class="d-block w-100" alt="..." width="500" height="500">
@@ -26,47 +22,49 @@
         <img src="https://i.blogs.es/ed843e/superpc-ap/450_1000.jpeg" class="d-block w-100" alt="..." width="500" height="500">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
     </button>
   </div>
+</div>
+
 <div class="title text-center">
     <h3>Productos</h3>
 </div>
 
-<div class="row mx-5">
-    <div class="col mx-5">
+<div class="row mx-5 display-flex">
+    <div class="col mx-4">
         <div class="card" style="width: 18rem;">
             <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
             <div class="card-body">
-                <h3 class="card-title"> PC GAMER</h3>
+                <h3 class="card-title"> PC GAMER 1</h3>
                 <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
                 <button class="btn btn-primary">Comprar</button>
             </div>
         </div>
     </div>
 
-    <div class="col">
+    <div class="col mx-4">
         <div class="card" style="width: 18rem;">
             <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
             <div class="card-body">
-                <h3 class="card-title"> PC GAMER</h3>
+                <h3 class="card-title"> PC GAMER 2</h3>
                 <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
                 <button class="btn btn-primary">Comprar</button>
             </div>
         </div>
     </div>
 
-    <div class="col ml-5">
+    <div class="col ml-4">
         <div class="card" style="width: 18rem;">
             <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
             <div class="card-body">
-                <h3 class="card-title"> PC GAMER</h3>
+                <h3 class="card-title"> PC GAMER 3</h3>
                 <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
                 <button class="btn btn-primary"> Comprar</button>
             </div>
@@ -76,7 +74,7 @@
         <div class="card" style="width: 18rem;">
             <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
             <div class="card-body">
-                <h3 class="card-title"> PC GAMER</h3>
+                <h3 class="card-title"> PC GAMER 4</h3>
                 <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
                 <button class="btn btn-primary">Comprar</button>
             </div>
@@ -87,49 +85,49 @@
 <br>
 <br>
 <div class="row mx-5">
-    <div class="col mx-5">
-        <div class="card" style="width: 18rem;">
-            <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
-            <div class="card-body">
-                <h3 class="card-title"> PC GAMER</h3>
-                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
-                <button class="btn btn-primary">Comprar</button>
-            </div>
-        </div>
-    </div>
+  <div class="col mx-4">
+      <div class="card" style="width: 18rem;">
+          <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
+          <div class="card-body">
+              <h3 class="card-title"> PC GAMER 1</h3>
+              <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
+              <button class="btn btn-primary">Comprar</button>
+          </div>
+      </div>
+  </div>
 
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-            <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
-            <div class="card-body">
-                <h3 class="card-title"> PC GAMER</h3>
-                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
-                <button class="btn btn-primary">Comprar</button>
-            </div>
-        </div>
-    </div>
+  <div class="col mx-4">
+      <div class="card" style="width: 18rem;">
+          <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
+          <div class="card-body">
+              <h3 class="card-title"> PC GAMER 2</h3>
+              <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
+              <button class="btn btn-primary">Comprar</button>
+          </div>
+      </div>
+  </div>
 
-    <div class="col ml-5">
-        <div class="card" style="width: 18rem;">
-            <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
-            <div class="card-body">
-                <h3 class="card-title"> PC GAMER</h3>
-                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
-                <button class="btn btn-primary"> Comprar</button>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-            <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
-            <div class="card-body">
-                <h3 class="card-title"> PC GAMER</h3>
-                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
-                <button class="btn btn-primary">Comprar</button>
-            </div>
-        </div>
-    </div>
-    
+  <div class="col ml-4">
+      <div class="card" style="width: 18rem;">
+          <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
+          <div class="card-body">
+              <h3 class="card-title"> PC GAMER 3</h3>
+              <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
+              <button class="btn btn-primary"> Comprar</button>
+          </div>
+      </div>
+  </div>
+  <div class="col">
+      <div class="card" style="width: 18rem;">
+          <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
+          <div class="card-body">
+              <h3 class="card-title"> PC GAMER 4</h3>
+              <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
+              <button class="btn btn-primary">Comprar</button>
+          </div>
+      </div>
+  </div>
+  
 </div>
 <br>
 <br>
