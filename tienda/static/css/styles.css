@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav a {
+    margin-right: 80px; 
+  }
+
+
+.navbar-brand {
+    margin-right: 80px; 
+
+}
+
+
+.navbar-expand{
+    background-color: black;
+}
+
+.d-flex {
+    margin-right: 60px;
+}
+
+
+body {
+    background-color: aqua;
+}
