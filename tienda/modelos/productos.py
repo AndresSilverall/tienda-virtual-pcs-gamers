@@ -19,4 +19,4 @@ class Productos(models.Model):
 
     class Meta:
         ordering = ["nombre"]
-        verbose_name = "Mis productos"
+        verbose_name_plural = "Mis productos"
