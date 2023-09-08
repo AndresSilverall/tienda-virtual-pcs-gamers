@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+
+{% block stylesheet %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    {{ block.super }}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="title text-center">
+    <h3>Productos</h3>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
+            <div class="card-body">
+                <h3 class="card-title"> PC GAMER</h3>
+                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
+                <button class="btn btn-primary">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
+            <div class="card-body">
+                <h3 class="card-title"> PC GAMER</h3>
+                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
+                <button class="btn btn-primary">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="https://clonesyperifericos.com/wp-content/uploads/2020/09/5d3e217079b75ec37e54261c6ddb4fa0-scaled.jpg" alt="dfdf">
+            <div class="card-body">
+                <h3 class="card-title"> PC GAMER</h3>
+                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio illum nam asperiores? Mollitia ratione eveniet ipsa illum porro saepe quas ab maxime. Accusamus minus minima sint magni. Quasi, laboriosam!</p>
+                <button class="btn btn-primary"> Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
