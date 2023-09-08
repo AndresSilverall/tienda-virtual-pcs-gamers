@@ -7,6 +7,24 @@
     margin-right: 80px; 
   }
 
+.navbar {
+    background: #ECE9E6;  
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+} 
+
+
+.navbar {
+    border-style:solid;
+    border-width: 2px;
+    border-color: #bdc3c7;
+}
+
+.navbar-nav a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger; 
+  }
+
 
 .navbar-brand {
     margin-right: 80px; 
@@ -24,5 +42,8 @@
 
 
 body {
-    background-color: aqua;
+    background: #ECE9E6;  
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+
 }
