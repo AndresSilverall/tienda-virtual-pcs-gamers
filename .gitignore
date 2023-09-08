@@ -1,0 +1,31 @@
+# Archivos y carpetas generados por el sistema operativo
+*.pyc
+__pycache__/
+.DS_Store
+
+# Carpetas de entorno virtual 
+venv/
+*.env
+
+# Carpeta de dependencias
+Pipfile.lock
+
+# Archivos de configuración local
+local_settings.py
+
+# Archivos de registro
+*.log
+
+# Archivos de carga de datos (fixtures)
+*.json
+*.xml
+
+# Archivos de migraciones
+**/migrations/*.py
+
+
+# Carpeta de cache
+cache/
+
+# Carpeta de archivos temporales
+tmp/
