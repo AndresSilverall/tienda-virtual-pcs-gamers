@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.text import slugify 
 
 
 # Create your models here.
@@ -7,14 +8,21 @@ class Productos(models.Model):
     descripcion = models.TextField(max_length=800, null=False)
     precio = models.FloatField(verbose_name="precio producto", null=False)
     imagen = models.ImageField(upload_to="media/productos")
+    slug = models.SlugField(max_length=500, default="", null=True)
+
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.nombre)
+        super(Productos, self).save(*args, **kwargs)
+
 
     def __str__(self):
         return self.nombre
     
 
     @property
-    def pass_():
-        pass
+    def obtener_todos_los_datos():
+        return Productos.objects.all()
     
 
     class Meta:
