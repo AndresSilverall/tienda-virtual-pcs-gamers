@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.text import slugify 
+from django.urls import reverse
 
 
 # Create your models here.
@@ -11,15 +12,19 @@ class Productos(models.Model):
     slug = models.SlugField(max_length=500, default="", null=True)
 
 
+    def __str__(self):
+        return self.nombre
+
+
     def save(self, *args, **kwargs):
         self.slug = slugify(self.nombre)
         super(Productos, self).save(*args, **kwargs)
 
 
-    def __str__(self):
-        return self.nombre
-    
+    def get_absolute_url(self):
+        return reverse("nombre_producto", kwargs={"slug": self.slug})
 
+   
     @property
     def obtener_todos_los_datos():
         return Productos.objects.all()
